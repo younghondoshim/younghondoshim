@@ -1,0 +1,85 @@
+.mainTitlewrap {
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  height: 100svh;
+  min-height: 900px;
+  width: 100%;
+  color: #04260c;
+}
+
+.mainTitleFlex {
+  display: flex;
+  align-items: center;
+}
+
+.mainTitleBox {
+  padding: 20px;
+  box-sizing: border-box;
+  transform: translateY(60px);
+}
+
+.mainTitleUpperText {
+  font-family: "NanumGothicCoding";
+  font-weight: 700;
+  transform: translateY(20px);
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.younghondoshimLogoGreen {
+  width: 164px;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+.mainTitleLowerText3 {
+  margin-top: 5px;
+  position: relative;
+  height: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mainTileMiddleText {
+  font-size: 10.5vw;
+  font-family: "gravesend-sans";
+  font-weight: 700;
+  line-height: 9.5vw;
+  transform: scaleY(1.2) translateX(-18px);
+  padding: 40px 0px;
+}
+
+.mainTitleLowerText3 > img {
+  width: 25px;
+  margin-right: 20px;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.mainTitleLowerText3 > img:hover {
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.mainTitleLowerText1 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: "RobotoMono";
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+.mainTitleLowerText2 {
+  margin-top: 20px;
+  opacity: 0.8;
+}
+
+.mainTileMiddleText1 {
+  letter-spacing: -0.08em;
+}
+
+.mainTileMiddleText2 {
+  letter-spacing: -0.055em;
+}

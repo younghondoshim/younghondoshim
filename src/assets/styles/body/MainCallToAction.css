@@ -1,0 +1,105 @@
+.mainCallToAction {
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  height: 100svh;
+  min-height: 900px;
+  width: 100%;
+  color: #04260c;
+}
+
+.mainCallToActionBox {
+  position: relative;
+}
+
+.mainCallToActionTitle {
+  font-size: 10.5vw;
+  padding-top: 40px;
+  font-family: "gravesend-sans";
+  font-weight: 700;
+  transform: scaleY(1.2);
+  padding-left: 4px;
+  letter-spacing: -0.055em;
+}
+
+.mainCallToActionTextArea {
+  padding-top: 20px;
+  font-size: 40px;
+  font-family: "NanumGothicCoding";
+  padding-left: 20px;
+  font-weight: 700;
+  line-height: 120%;
+  opacity: 0.8;
+  letter-spacing: -2px;
+}
+
+.mainCallToActionImgArea {
+  margin-top: 30px;
+}
+
+.mainCallToActionImgArea > div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 140px;
+  margin-left: 20px;
+  height: 25px;
+  margin-top: 8px;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.mainCallToActionImgArea > div > div {
+  display: flex;
+  align-items: center;
+}
+
+.mainCallToActionImgArea > div > div:nth-child(2) > img {
+  width: 25px;
+  object-fit: cover;
+}
+
+.CartIcon {
+  transform: translateX(-2px);
+}
+
+.mainCallToActionFooterLeft {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+}
+
+.mainCallToActionFooterRight {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+
+.younghondoshimLogo {
+  width: 174px;
+  object-fit: cover;
+}
+
+.ArrowUp {
+  width: 40px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.ArrowUp:hover {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.mainCallToActionEmail {
+  font-family: "NanumGothicCoding";
+  opacity: 0.6;
+}
+
+.mainCallToActionImgAreaWrap:hover {
+  opacity: 1;
+  transition: all 0.3s ease;
+}

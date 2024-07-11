@@ -1,0 +1,40 @@
+.mainIntroduceWrap {
+  display: grid;
+  grid-template-columns: 7fr 4fr 1fr;
+  grid-gap: 20px;
+  height: 100svh;
+  min-height: 900px;
+  width: 100%;
+  color: #04260c;
+}
+
+.mainIntroduceFlex {
+  display: flex;
+  align-items: center;
+}
+
+.mainIntroduceText {
+  width: 100%;
+}
+
+.mainIntroduceUpperText {
+  font-family: "RobotoMono";
+  opacity: 0.8;
+  margin-bottom: 5px;
+}
+
+.mainIntroduceMiddleText {
+  font-family: "NanumGothicCoding";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -2px;
+  margin-bottom: 20px;
+}
+
+.mainIntroduceLowerText {
+  font-family: "NanumGothicCoding";
+  opacity: 0.8;
+  letter-spacing: -1px;
+  line-height: 120%;
+}

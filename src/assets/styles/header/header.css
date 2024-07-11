@@ -1,0 +1,55 @@
+.headerWrap {
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  grid-gap: 20px;
+  height: 100svh;
+  min-height: 800px;
+  width: 100%;
+}
+
+.headerMain {
+  width: 100%;
+  height: 100svh;
+  border-right: 1px solid #04260c66;
+  font-family: "RobotoMono";
+  font-size: 30px;
+  font-weight: 300;
+  font-style: normal;
+  color: #04260c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerMainFont {
+  transform: rotate(270deg);
+  position: absolute;
+  letter-spacing: 2px;
+}
+
+.mainTitleUpperText {
+  font-family: "NanumGothicCoding";
+}
+
+.younghondoshimLogoGreen {
+  width: 164px;
+  object-fit: cover;
+}
+
+.mainTitleLowerText3 {
+  margin-top: 10px;
+  position: relative;
+  height: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mainTitleLowerText3 > img {
+  width: 25px;
+  margin-right: 20px;
+}
+
+.mainTitleLowerText1 {
+  font-family: "RobotoMono";
+}
