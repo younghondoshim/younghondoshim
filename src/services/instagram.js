@@ -1,30 +1,24 @@
-import React, { useEffect } from "react";
-import axios from "axios";
+import React, { useEffect, useRef } from "react";
+import Instafeed from "instafeed.js";
 
-const InstagramProfile = () => {
-  //   const [media, setMedia] = useState([]);
+const InstagramFeed = () => {
+  const instafeedRef = useRef(null);
 
   useEffect(() => {
-    const fetchProfile = async () => {
-      const { data } = await axios.get(`
-            https://graph.instagram.com/${process.env.NEXT_PUBLIC_INSTAGRAM_USER_ID}/media?fields=id,media_type,media_url,permalink,thumbnail_url,username,caption&access_token=${process.env.NEXT_PUBLIC_INSTAGRAM_ACCESS_TOKEN}
-            `);
-      return data;
-      //   try {
-      //     // API 호출: 미디어 정보 가져오기
-      //     const mediaResponse = await axios.get(
-      //       `https://graph.instagram.com/${process.env.REACT_APP_INSTAGRAM_USER_ID}/media?fields=id,media_type,media_url,permalink,thumbnail_url,username,caption&access_token=${process.env.REACT_APP_INSTAGRAM_ACCESS_TOKEN}`
-      //     );
-      //     setMedia(mediaResponse.data.data);
-      //   } catch (error) {
-      //     console.error("Error fetching Instagram data:", error);
-      //   }
-    };
-
-    fetchProfile();
+    const feed = new Instafeed({
+      accessToken: "YOUR_ACCESS_TOKEN",
+      limit: 8,
+      template:
+        '<div class="instafeed-item"><a href="{{link}}" target="_blank"><img src="{{image}}" alt="{{caption}}" /></a></div>',
+      target: instafeedRef.current,
+    });
+    feed.run();
   }, []);
 
-  return <div></div>;
+  return (
+    <div>
+      <div id="instafeed" ref={instafeedRef}></div>
+    </div>
+  );
 };
-
-export default InstagramProfile;
+export default InstagramFeed;
