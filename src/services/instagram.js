@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const InstagramProfile = () => {
-  const [profile, setProfile] = useState(null);
   const [media, setMedia] = useState([]);
 
   useEffect(() => {
