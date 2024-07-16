@@ -20,10 +20,6 @@ const InstagramProfile = () => {
     fetchProfile();
   }, []);
 
-  if (!profile) {
-    return <div>Loading...</div>;
-  }
-
   return (
     <div>
       {media.map((item) => (
