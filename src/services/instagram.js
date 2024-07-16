@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const InstagramProfile = () => {
-  const [media, setMedia] = useState([]);
+  //   const [media, setMedia] = useState([]);
 
   useEffect(() => {
     const fetchProfile = async () => {
