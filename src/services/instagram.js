@@ -3,8 +3,9 @@ import axios from "axios";
 
 const InstagramProfile = () => {
   const [posts, setPosts] = useState([]);
-  const accessToken = "YOUR_ACCESS_TOKEN"; // 실제 Access Token으로 대체
-  const userId = "YOUR_USER_ID"; // 실제 User ID로 대체
+  const accessToken =
+    "EABmvb1CnEXABOw5jcaUZAZAZBSy2eVxWyJZArmrWMJJDEUuP1BaQJNHuCFfaZCz6E8DDu26j66r1oJmyngFIhJj2ltZC4IDhRMmSZBim1dKiL7l0lDZB0u59600cMZAfUZBv2XQoJKrKgWgFavz55IcbQaKqX4IEqNHz1WB3Ga3EpG7fDawu9RYD52cJWfYQbJYLIN";
+  const userId = "1042412157302694"; // 실제 User ID로 대체
   const apiUrl = `https://graph.instagram.com/${userId}/media?fields=id,caption,media_type,media_url,permalink,thumbnail_url,timestamp&access_token=${accessToken}`;
 
   useEffect(() => {
