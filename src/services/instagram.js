@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import Instafeed from "instafeed.js";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 const InstagramProfile = () => {
   const [posts, setPosts] = useState([]);
