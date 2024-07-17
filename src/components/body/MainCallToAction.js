@@ -1,6 +1,6 @@
 import React from "react";
 import "../../assets/styles/body/MainCallToAction.css";
-import Logo from "../../assets/images/younghondoshimLogoGreenBG.svg";
+import Logo from "../../assets/images/-Y2K-logo-TRANS-.png";
 import Bandcamp from "../../assets/images/bandcampIconGreen.svg";
 import Youtube from "../../assets/images/youtubeIconGreen.svg";
 import Insta from "../../assets/images/instaIconGreen.svg";

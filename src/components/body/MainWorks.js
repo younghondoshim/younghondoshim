@@ -7,7 +7,7 @@ function MainWorks() {
     <div className="mainWorksWrap">
       <div></div>
       <div className="mainWorksBox">
-        <div className="mainWorksTitle">MY NEWS</div>
+        <div className="mainWorksTitle">NEWS</div>
         <InstagramFeed />
         <div className="mainworksGrid"></div>
       </div>

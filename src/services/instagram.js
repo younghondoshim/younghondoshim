@@ -6,9 +6,9 @@ const InstagramProfile = () => {
   const accessToken =
     "EABmvb1CnEXABOw5jcaUZAZAZBSy2eVxWyJZArmrWMJJDEUuP1BaQJNHuCFfaZCz6E8DDu26j66r1oJmyngFIhJj2ltZC4IDhRMmSZBim1dKiL7l0lDZB0u59600cMZAfUZBv2XQoJKrKgWgFavz55IcbQaKqX4IEqNHz1WB3Ga3EpG7fDawu9RYD52cJWfYQbJYLIN";
   const userId = "1042412157302694"; // 실제 User ID로 대체
-  const apiUrl = `https://graph.instagram.com/${userId}/media?fields=id,caption,media_type,media_url,permalink,thumbnail_url,timestamp&access_token=${accessToken}`;
 
   useEffect(() => {
+    const apiUrl = `https://graph.instagram.com/${userId}/media?fields=id,caption,media_type,media_url,permalink,thumbnail_url,timestamp&access_token=${accessToken}`;
     console.log(apiUrl); // 디버깅 코드 추가
     axios
       .get(apiUrl)
@@ -21,7 +21,7 @@ const InstagramProfile = () => {
           error.response ? error.response.data : error.message
         );
       });
-  }, [apiUrl]);
+  }, []);
 
   return (
     <div>
