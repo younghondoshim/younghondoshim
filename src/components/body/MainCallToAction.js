@@ -53,7 +53,7 @@ function MainCallToAction() {
               <img src={ArrowUp} alt="ArrowUp" className="ArrowUp" />
             </div>
             <div className="mainCallToActionEmail">
-              사이트 제작 문의 yuhan6653@gmail.com
+              <span>사이트 제작 문의</span> <span>yuhan6653@gmail.com</span>
             </div>
           </div>
           <div className="mainCallToActionFooterRight">
