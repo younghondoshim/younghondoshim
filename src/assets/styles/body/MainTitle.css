@@ -17,11 +17,11 @@
 .mainTitleBox {
   padding: 20px;
   box-sizing: border-box;
-  transform: translateY(60px);
+  transform: translateY(25px);
 }
 
 .mainTitleUpperText {
-  font-family: "NanumGothicCoding";
+  font-family: "IBMPlexSansKr";
   font-weight: 700;
   transform: translateY(20px);
   font-size: 20px;

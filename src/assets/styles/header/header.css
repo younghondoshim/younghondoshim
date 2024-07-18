@@ -6,7 +6,6 @@
   height: 100svh;
   min-height: 800px;
   width: 100%;
-  filter: url(#grainy); /* 필터 적용 */
 }
 
 .headerWrap:after {

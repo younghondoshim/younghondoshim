@@ -26,7 +26,7 @@
 .mainCallToActionTextArea {
   padding-top: 20px;
   font-size: 40px;
-  font-family: "NanumGothicCoding";
+  font-family: "IBMPlexSansKr";
   padding-left: 20px;
   font-weight: 700;
   line-height: 120%;
@@ -97,7 +97,7 @@
 }
 
 .mainCallToActionEmail {
-  font-family: "NanumGothicCoding";
+  font-family: "IBMPlexSansKr";
   opacity: 0.6;
 }
 

@@ -26,7 +26,7 @@
 }
 
 .mainIntroduceMiddleText {
-  font-family: "NanumGothicCoding";
+  font-family: "IBMPlexSansKr";
   font-size: 40px;
   font-weight: 700;
   line-height: 120%;
@@ -35,7 +35,7 @@
 }
 
 .mainIntroduceLowerText {
-  font-family: "NanumGothicCoding";
+  font-family: "IBMPlexSansKr";
   opacity: 0.8;
   letter-spacing: -1px;
   line-height: 120%;

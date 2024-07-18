@@ -27,15 +27,15 @@ code {
 }
 
 @font-face {
-  font-family: NanumGothicCoding;
-  src: url(/src/assets/fonts/NanumGothicCoding.woff) format("woff");
+  font-family: IBMPlexSansKr;
+  src: url(/src/assets/fonts/IBMPlexSansKR-Light.woff) format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: NanumGothicCoding;
-  src: url(/src/assets/fonts/NanumGothicCoding-Bold.woff) format("woff");
+  font-family: IBMPlexSansKr;
+  src: url(/src/assets/fonts/IBMPlexSansKR-Bold.woff) format("woff");
   font-weight: 700;
   font-style: normal;
 }
