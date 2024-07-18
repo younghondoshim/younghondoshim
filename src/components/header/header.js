@@ -3,11 +3,13 @@ import "../../assets/styles/header/header.css";
 
 function Header() {
   return (
-    <div className="headerWrap">
-      <div className="headerMain">
-        <div className="headerMainFont">YOUNGHONDOSHIM</div>
+    <div>
+      <div className="headerWrap" id="grainyEffect">
+        <div className="headerMain">
+          <div className="headerMainFont">YOUNGHONDOSHIM</div>
+        </div>
+        <div></div>
       </div>
-      <div></div>
     </div>
   );
 }

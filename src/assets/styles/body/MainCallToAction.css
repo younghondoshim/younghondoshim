@@ -5,6 +5,8 @@
   min-height: 900px;
   width: 100%;
   color: #04260c;
+  position: relative;
+  z-index: 1;
 }
 
 .mainCallToActionBox {
@@ -97,6 +99,10 @@
 .mainCallToActionEmail {
   font-family: "NanumGothicCoding";
   opacity: 0.6;
+}
+
+.mainCallToActionImgAreaWrap {
+  font-family: "Typewcond";
 }
 
 .mainCallToActionImgAreaWrap:hover {

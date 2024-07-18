@@ -5,6 +5,8 @@
   min-height: 900px;
   width: 100%;
   color: #04260c;
+  position: relative;
+  z-index: 1;
 }
 
 .mainTitleFlex {
@@ -66,7 +68,7 @@
 .mainTitleLowerText1 {
   margin-top: 10px;
   font-size: 20px;
-  font-family: "RobotoMono";
+  font-family: "Typewcond";
   font-weight: 700;
   opacity: 0.8;
 }

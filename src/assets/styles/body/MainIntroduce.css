@@ -6,6 +6,8 @@
   min-height: 900px;
   width: 100%;
   color: #04260c;
+  position: relative;
+  z-index: 1;
 }
 
 .mainIntroduceFlex {
@@ -18,7 +20,7 @@
 }
 
 .mainIntroduceUpperText {
-  font-family: "RobotoMono";
+  font-family: "Typewcond";
   opacity: 0.8;
   margin-bottom: 5px;
 }
