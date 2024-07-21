@@ -15,3 +15,12 @@ body::-webkit-scrollbar-thumb {
   background: #04260c99; /* 스크롤바의 색상 */
   border-radius: 10px;
 }
+
+a:active,
+a:focus,
+a:hover,
+a:visited,
+a {
+  text-decoration: none;
+  color: #04260c;
+}

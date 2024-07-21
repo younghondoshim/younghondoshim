@@ -18,3 +18,73 @@
   padding-left: 4px;
   letter-spacing: -0.055em;
 }
+
+.mainWorksGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-left: 20px;
+  margin-top: 70px;
+}
+
+.mainWorksGridText {
+  position: relative;
+}
+
+.mainWorksarrowRight {
+  height: 14px;
+  object-fit: cover;
+  padding-left: 5px;
+}
+
+.mainWorksGridBorder {
+  padding: 10px 10px;
+  height: 423px;
+  /* border-right: 1px solid #04260c66; */
+}
+
+.mainWorksGridBorder:last-child {
+  border-right: none;
+}
+
+.mainWorksGridUpperText > div:first-child {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+.mainWorksGridUpperText > div:nth-child(2) {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+.mainWorksGridUpperText > div:nth-child(3) {
+  font-weight: 700;
+  opacity: 0.8;
+  transition: all 0.3s;
+  letter-spacing: -1px;
+  margin-top: 12px;
+}
+
+.mainWorksGridUpperText > div:nth-child(3) > a {
+  display: flex;
+  align-items: center;
+}
+
+.mainWorksGridUpperText > div:nth-child(3):hover {
+  font-weight: 700;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.mainWorksGridLowerText {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-family: "IBMPlexSansKr";
+  opacity: 0.8;
+}
+
+#player {
+  font-family: "IBMPlexSansKr" !important;
+}
