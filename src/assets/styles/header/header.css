@@ -91,7 +91,16 @@
 }
 
 @media (max-width: 849px) {
-  .headerWrap {
+  .headerMain {
     display: none;
+  }
+  .headerWrap {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 12fr;
+    grid-gap: 20px;
+    height: 100svh;
+    min-height: 800px;
+    width: 100%;
   }
 }

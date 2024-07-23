@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 7fr 4fr 1fr;
   grid-gap: 20px;
-  height: 85vh;
+  height: 85svh;
   min-height: 750px;
   width: 100%;
   color: #04260c;
@@ -49,13 +49,13 @@
     margin-right: 40px;
   }
   .mainIntroduceWrap {
-    height: 85vh;
+    height: 85svh;
   }
 }
 
 @media (max-width: 849px) {
   .mainIntroduceFlex {
-    margin-right: 40px;
+    margin-right: 20px;
   }
   .mainIntroduceWrap {
     grid-template-columns: 4fr 8fr;
@@ -70,13 +70,13 @@
     font-size: max(25px, 4.5vw);
   }
   .mainIntroduceWrap {
-    height: 85vh;
+    height: 85svh;
   }
 }
 
 @media (max-width: 499px) {
   .mainIntroduceFlex {
-    margin-right: 20px;
+    margin-right: 0px;
   }
   .mainIntroduceWrap {
     grid-template-columns: 12fr;
