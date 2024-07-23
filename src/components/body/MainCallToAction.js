@@ -8,6 +8,9 @@ import Cart from "../../assets/images/CartIconGreen.svg";
 import ArrowUp from "../../assets/images/arrowUp.svg";
 
 function MainCallToAction() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <div className="mainCallToAction">
       <div></div>
@@ -49,7 +52,12 @@ function MainCallToAction() {
         <div className="mainCallToActionFooter">
           <div className="mainCallToActionFooterLeft">
             <div>
-              <img src={ArrowUp} alt="ArrowUp" className="ArrowUp" />
+              <img
+                src={ArrowUp}
+                alt="ArrowUp"
+                className="ArrowUp"
+                onClick={scrollToTop}
+              />
             </div>
             <div className="mainCallToActionEmail">
               <span>사이트 제작 문의</span> <span>yuhan6653@gmail.com</span>

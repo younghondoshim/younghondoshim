@@ -144,7 +144,7 @@
   }
 
   .mainTileMiddleText {
-    font-size: max(55px, 19vw);
+    font-size: max(55px, 18vw);
     line-height: 15vw;
   }
 
@@ -163,7 +163,7 @@
   .mainTitleUpperText {
     font-family: "IBMPlexSansKr";
 
-    transform: translateY(-10px);
+    transform: translateY(-0.5vw);
   }
 
   .mainTitleLowerText3 > img {
