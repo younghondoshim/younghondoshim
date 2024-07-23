@@ -1,6 +1,6 @@
 .mainCallToAction {
   display: grid;
-  grid-template-columns: 1fr 11fr;
+  grid-template-columns: 1fr 10fr 1fr;
   height: 100svh;
   min-height: 900px;
   width: 100%;
@@ -14,7 +14,7 @@
 }
 
 .mainCallToActionTitle {
-  font-size: 10.5vw;
+  font-size: max(90px, 10.5vw);
   padding-top: 40px;
   font-family: "gravesend-sans";
   font-weight: 700;
@@ -25,7 +25,7 @@
 
 .mainCallToActionTextArea {
   padding-top: 20px;
-  font-size: 40px;
+  font-size: max(30px, 2vw);
   font-family: "IBMPlexSansKr";
   padding-left: 20px;
   font-weight: 700;
@@ -75,11 +75,12 @@
 .mainCallToActionFooterRight {
   position: absolute;
   bottom: 40px;
-  right: 40px;
+  right: 0px;
 }
 
 .younghondoshimLogo {
-  width: 174px;
+  width: 9vw;
+  min-width: 140px;
   object-fit: cover;
 }
 
@@ -112,4 +113,110 @@
 .mainCallToActionImgAreaWrap:hover {
   opacity: 1;
   transition: all 0.3s ease;
+}
+
+@media (max-width: 1199px) {
+  .mainCallToActionTitle {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 849px) {
+  .mainCallToAction {
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 1px;
+    grid-template-columns: 1fr;
+  }
+
+  .mainCallToAction > div:first-child {
+    display: none;
+  }
+  .mainCallToActionTitle {
+    font-size: 13vw;
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+
+  .mainCallToActionTextArea {
+    font-size: max(25px, 4.5vw);
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin-top: 10px;
+    padding-right: 20px;
+  }
+  .mainCallToActionTextArea > div {
+    display: block;
+  }
+
+  .mainCallToActionImgArea > div {
+    margin-left: 0px;
+  }
+  .mainCallToActionFooterLeft {
+    left: 0px;
+    bottom: 60px;
+  }
+  .mainCallToActionFooterRight {
+    right: 30px;
+    bottom: 60px;
+  }
+}
+
+@media (max-width: 499px) {
+  .mainCallToAction {
+    height: 90svh;
+  }
+  .mainCallToActionImgArea {
+    margin-top: 50px;
+  }
+  .mainCallToActionBox {
+    transform: translateY(50px);
+  }
+  .mainCallToAction {
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 1px;
+    grid-template-columns: 1fr;
+  }
+
+  .mainCallToAction > div:first-child {
+    display: none;
+  }
+  .mainCallToActionTitle {
+    font-size: 11vw;
+    padding: 0px;
+  }
+
+  .mainCallToActionTextArea {
+    font-size: 25px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin-top: 10px;
+    padding-right: 20px;
+    font-weight: 400;
+  }
+  .mainCallToActionImgArea > div {
+    margin-left: 0px;
+  }
+  .mainCallToActionTextArea > div {
+    display: inline;
+    margin-right: 10px;
+  }
+  .mainCallToActionFooterLeft {
+    left: 0px;
+    bottom: 20px;
+  }
+  .mainCallToActionFooterRight {
+    right: 30px;
+    bottom: 40px;
+  }
+  .mainCallToActionEmail {
+    display: none;
+  }
 }

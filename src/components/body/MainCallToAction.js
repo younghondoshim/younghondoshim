@@ -14,12 +14,11 @@ function MainCallToAction() {
       <div className="mainCallToActionBox">
         <div className="mainCallToActionTitle">CONTACT ME</div>
         <div className="mainCallToActionTextArea">
-          감성적인 멜로디와 깊이 있는 가사로
-          <br /> 청중의 마음을 울리는 음악가입니다.
-          <br />
-          다양한 장르를 넘나들며
-          <br /> 독창적인 음악을 선보입니다.
-          <br />
+          <div>감성적인 멜로디와 깊이 있는 가사로</div>
+          <div>청중의 마음을 울리는 음악가입니다.</div>
+
+          <div> 다양한 장르를 넘나들며</div>
+          <div>독창적인 음악을 선보입니다.</div>
         </div>
         <div className="mainCallToActionImgArea">
           <div className="mainCallToActionImgAreaWrap">

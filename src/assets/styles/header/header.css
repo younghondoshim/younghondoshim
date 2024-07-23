@@ -61,7 +61,7 @@
   height: 100svh;
   border-right: 1px solid #04260c66;
   font-family: "Typewcond";
-  font-size: 40px;
+  font-size: max(30px, 2vw);
   color: #04260c;
   display: flex;
   justify-content: center;
@@ -88,4 +88,10 @@
   height: 100%;
   position: fixed;
   z-index: 1;
+}
+
+@media (max-width: 849px) {
+  .headerWrap {
+    display: none;
+  }
 }

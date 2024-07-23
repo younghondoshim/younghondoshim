@@ -14,8 +14,12 @@ function MainTitle() {
         <div className="mainTitleBox">
           <div className="mainTitleUpperText">심장을 움직여라</div>
           <div className="mainTileMiddleText">
-            <div className="mainTileMiddleText1">RHYMES & BEATES</div>
-            <div className="mainTileMiddleText2"> MOVE THE SOULS</div>
+            <div className="mainTileMiddleText1">
+              <div>RHYMES &</div> <div>BEATES</div>
+            </div>
+            <div className="mainTileMiddleText2">
+              <div>MOVE THE</div> <div>SOULS</div>
+            </div>
           </div>
           <div className="mainTitleLowerText">
             <div className="mainTitleLowerText1">PRODUCE BY RENE</div>
