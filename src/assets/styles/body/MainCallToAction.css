@@ -21,6 +21,7 @@
   transform: scaleY(1.2);
   padding-left: 4px;
   letter-spacing: -0.055em;
+  height: 18.75vw;
 }
 
 .mainCallToActionTextArea {
@@ -66,6 +67,21 @@
   transform: translateX(-2px);
 }
 
+.mainCallToActionTitleGrid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(800px - 10vw);
+}
+
+.mainCallToActionTitleGrid > div:first-child {
+  height: 360px;
+}
+
+.mainCallToActionFooter {
+  width: 100%;
+  height: 150px;
+}
 .mainCallToActionFooterLeft {
   position: absolute;
   bottom: 40px;
@@ -155,12 +171,15 @@
   .mainCallToActionImgArea > div {
     margin-left: 0px;
   }
+  .mainCallToActionTitleGrid {
+    height: calc(800px - 13vw);
+  }
   .mainCallToActionFooterLeft {
     left: 0px;
     bottom: 60px;
   }
   .mainCallToActionFooterRight {
-    right: 20px;
+    right: 0px;
     bottom: 60px;
   }
 }
@@ -208,12 +227,16 @@
     display: inline;
     margin-right: 10px;
   }
+
+  .mainCallToActionTitleGrid {
+    height: calc(90vh - 11vw);
+  }
   .mainCallToActionFooterLeft {
     left: 0px;
     bottom: 20px;
   }
   .mainCallToActionFooterRight {
-    right: 20px;
+    right: 0px;
     bottom: 40px;
   }
   .mainCallToActionEmail {

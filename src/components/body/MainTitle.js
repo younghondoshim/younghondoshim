@@ -5,6 +5,7 @@ import Bandcamp from "../../assets/images/bandcampIconGreen.svg";
 import Youtube from "../../assets/images/youtubeIconGreen.svg";
 import Insta from "../../assets/images/instaIconGreen.svg";
 import Cart from "../../assets/images/CartIconGreen.svg";
+import TextTypingAni from "../animation/TypingEffect";
 
 function MainTitle() {
   return (
@@ -15,10 +16,12 @@ function MainTitle() {
           <div className="mainTitleUpperText">심장을 움직여라</div>
           <div className="mainTileMiddleText">
             <div className="mainTileMiddleText1">
-              <div>RHYMES &</div> <div>BEATES</div>
+              <div>
+                <TextTypingAni text={"RHYMES & BEATES"} startDelay={1120} />
+              </div>
             </div>
             <div className="mainTileMiddleText2">
-              <div>MOVE THE</div> <div>SOULS</div>
+              <TextTypingAni text={"MOVE THE SOULS"} startDelay={0} />
             </div>
           </div>
           <div className="mainTitleLowerText">

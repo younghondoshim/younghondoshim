@@ -23,9 +23,13 @@
 .mainTitleUpperText {
   font-family: "IBMPlexSansKr";
   font-weight: 700;
-  transform: translateY(20px);
+  transform: translateY(1vw);
   font-size: 20px;
   opacity: 0.8;
+}
+
+.mainTileMiddleText1 > div:first-child {
+  margin-right: 1.9vw;
 }
 
 .younghondoshimLogoGreen {
@@ -44,12 +48,12 @@
 }
 
 .mainTileMiddleText {
-  font-size: max(90px, 10.5vw);
+  font-size: max(90px, 10.6vw);
   font-family: "gravesend-sans";
   font-weight: 700;
-  line-height: 9.5vw;
-  transform: scaleY(1.2) translateX(-1vw);
-  padding: 40px 0px;
+  line-height: 8.5vw;
+  transform: scaleY(1.5) translateX(-1vw);
+  padding: 4.5vw 0px;
 }
 
 .mainTitleLowerText3 > img {
@@ -67,7 +71,7 @@
 }
 
 .mainTitleLowerText1 {
-  margin-top: 10px;
+  margin-top: 0.7vw;
   font-size: 20px;
   font-family: "Typewcond";
   font-weight: 700;
@@ -100,22 +104,27 @@
   .mainTileMiddleText {
     font-size: max(55px, 13vw);
     line-height: 10vw;
+    transform: scaleY(1.2) translateX(-1vw);
   }
   .mainTitleUpperText {
-    transform: translateY(0px);
+    transform: translateY(0.5vw);
   }
   .mainTitleBox {
     transform: translateY(-40px);
   }
 
   .mainTitleLowerText1 {
-    margin-top: 1.3vw;
+    margin-top: 2vw;
   }
 }
 
 @media (max-width: 849px) {
   .mainTileMiddleText {
     padding: 5vw 0px;
+    transform: scaleY(1.2);
+    font-size: max(55px, 18vw);
+    line-height: 15vw;
+    transform: translateX(-1.2vw);
   }
 
   .mainTileMiddleText1 > div,
@@ -141,11 +150,6 @@
     transform: translateY(0px);
     margin: 0px 20px;
     padding: 0px;
-  }
-
-  .mainTileMiddleText {
-    font-size: max(55px, 18vw);
-    line-height: 15vw;
   }
 
   .mainTileMiddleText1 {
@@ -163,7 +167,7 @@
   .mainTitleUpperText {
     font-family: "IBMPlexSansKr";
 
-    transform: translateY(-0.5vw);
+    transform: translateY(5.5vw);
   }
 
   .mainTitleLowerText3 > img {
@@ -176,6 +180,10 @@
 @media (max-width: 499px) {
   .mainTileMiddleText {
     padding: 5vw 0px;
+    transform: scaleY(1.2);
+    transform: translateX(-1.2vw);
+    font-size: max(55px, 17vw);
+    line-height: 14vw;
   }
 
   .mainTileMiddleText1 > div,
@@ -201,11 +209,6 @@
     transform: translateY(0px);
     margin: 0px 20px;
     padding: 0px;
-  }
-
-  .mainTileMiddleText {
-    font-size: max(55px, 17vw);
-    line-height: 14vw;
   }
 
   .mainTileMiddleText1 {
