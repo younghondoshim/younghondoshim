@@ -91,6 +91,9 @@
 .mainTileMiddleText2 > div {
   display: inline-block;
 }
+.mainTileMiddleText2 > div:nth-child(1) {
+  padding-right: 2.2vw;
+}
 
 .mainTileMiddleText2 {
   letter-spacing: -0.055em;

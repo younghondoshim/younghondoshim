@@ -5,12 +5,12 @@ import MainIntroduce from "./components/body/MainIntroduce.js";
 import MainWorks from "./components/body/MainWorks.js";
 import "./App.css";
 import MainCallToAction from "./components/body/MainCallToAction.js";
-import BlurEffect from "./components/animation/blurEffect.js";
+// import BlurEffect from "./components/animation/blurEffect.js";
 
 function App() {
   return (
     <div className="App">
-      <BlurEffect />
+      {/* <BlurEffect /> */}
       <Header />
       <MainTitle />
       <MainIntroduce />

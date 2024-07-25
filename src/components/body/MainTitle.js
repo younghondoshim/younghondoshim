@@ -17,7 +17,7 @@ function MainTitle() {
           <div className="mainTileMiddleText">
             <div className="mainTileMiddleText1">
               <div>
-                <TextTypingAni text={"RHYMES & BEATES"} startDelay={1120} />
+                <TextTypingAni text={"RHYMES & BEATES"} startDelay={1500} />
               </div>
             </div>
             <div className="mainTileMiddleText2">
