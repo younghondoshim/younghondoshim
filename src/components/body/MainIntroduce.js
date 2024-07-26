@@ -1,6 +1,6 @@
 import React from "react";
 import "../../assets/styles/body/MainIntroduce.css";
-import FadeInEffect from "../animation/FadeInEffect";
+import FadeInEffect from "../animation/FadeInEffect.js";
 
 function MainIntroduce() {
   return (

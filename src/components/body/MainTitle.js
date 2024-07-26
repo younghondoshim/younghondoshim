@@ -5,7 +5,7 @@ import Bandcamp from "../../assets/images/bandcampIconGreen.svg";
 import Youtube from "../../assets/images/youtubeIconGreen.svg";
 import Insta from "../../assets/images/instaIconGreen.svg";
 import Cart from "../../assets/images/CartIconGreen.svg";
-import TextTypingAni from "../animation/TypingEffect";
+import MainCallToActionTextTypingAni from "../animation/MainTypingEffect.js";
 
 function MainTitle() {
   return (
@@ -17,11 +17,17 @@ function MainTitle() {
           <div className="mainTileMiddleText">
             <div className="mainTileMiddleText1">
               <div>
-                <TextTypingAni text={"RHYMES & BEATES"} startDelay={1500} />
+                <MainCallToActionTextTypingAni
+                  text={"RHYMES & BEATES"}
+                  startDelay={1500}
+                />
               </div>
             </div>
             <div className="mainTileMiddleText2">
-              <TextTypingAni text={"MOVE THE SOULS"} startDelay={0} />
+              <MainCallToActionTextTypingAni
+                text={"MOVE THE SOULS"}
+                startDelay={0}
+              />
             </div>
           </div>
           <div className="mainTitleLowerText">
