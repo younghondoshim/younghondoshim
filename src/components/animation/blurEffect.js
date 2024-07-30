@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import "../../assets/styles/animation/blurEffect.css";
 
-function BlurEffect() {
+function BlurEffect({ children }) {
   const [isVisible, setIsVisible] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
 
@@ -20,7 +20,9 @@ function BlurEffect() {
     <div
       className={`readyBlurEffect ${isVisible ? "Off" : ""}`}
       style={{ display: isHidden ? "none" : "block" }}
-    ></div>
+    >
+      {children}
+    </div>
   );
 }
 

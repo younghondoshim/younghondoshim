@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "../../assets/styles/body/MainWorks.css";
 import arrowRight from "../../assets/images/arrowRight.svg";
 import EventChain from "../animation/EventChain.js";
-import LazyLoadWrapper from "../animation/LazyLoadWrapper";
-import TextTypingAni from "../animation/TypingEffect";
+// import LazyLoadWrapper from "../animation/LazyLoadWrapper";
+import FadeInEffect from "../animation/FadeInEffect.js";
 
 function MainWorks() {
   const [isTextTypingCompleted2, setIsTextTypingCompleted2] = useState(false);
@@ -19,13 +19,9 @@ function MainWorks() {
       <div></div>
       <div className="mainWorksBox">
         <div className="mainWorksTitle">
-          <LazyLoadWrapper>
-            <TextTypingAni
-              text={"DISCOGRAPHY"}
-              onComplete={() => handleTypingComplete2(true)}
-              duration={0}
-            />
-          </LazyLoadWrapper>
+          <FadeInEffect onComplete={() => handleTypingComplete2(true)}>
+            DISCOGRAPHY
+          </FadeInEffect>
         </div>
         <EventChain show={isTextTypingCompleted2} timer={650}>
           <div className="mainWorksGrid">
@@ -44,7 +40,7 @@ function MainWorks() {
                   </a>
                 </div>
               </div>
-              <div className="mainWorksGridLowerText">Produce By RENE</div>
+              <div className="mainWorksGridLowerText">produced by RENE.</div>
             </div>
             <div className="mainWorksGridStyle mainWorksGridChangeStyle2">
               <div className="mainWorksBorder">

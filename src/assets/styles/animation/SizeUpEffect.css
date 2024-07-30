@@ -1,0 +1,21 @@
+.Size-Up-section {
+  opacity: 0;
+  font-size: 10.9vw;
+  transition: all 1.5s ease-out;
+  margin-left: 0.8vw;
+  line-height: 8.5vw;
+}
+
+.Size-Up-sectionis-Size-Up {
+  opacity: 1;
+  font-size: 11.4vw;
+  transition: all 0.4s ease-out;
+  margin-left: 0;
+}
+
+.is-Size-Up {
+  opacity: 1;
+  font-size: 11.4vw;
+  transition: all 1.5s ease-out;
+  margin-left: 0;
+}

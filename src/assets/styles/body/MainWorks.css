@@ -1,13 +1,14 @@
 .mainWorksWrap {
   display: grid;
   grid-template-columns: 1fr 10fr 1fr;
-  height: 100svh;
-  min-height: 600px;
+  height: 120svh;
+  min-height: 800px;
   width: 100%;
   color: #04260c;
   position: relative;
   z-index: 1;
   padding-bottom: 0px;
+  margin-top: 20svh;
 }
 
 .mainWorksTitle {
@@ -74,16 +75,22 @@
   padding-left: 0px;
 }
 
+.mainWorksGridUpperText {
+  font-family: "IBMPlexSansKr";
+}
+
 .mainWorksGridUpperText > div:first-child {
   font-size: max(30px, 2vw);
   font-weight: 700;
   letter-spacing: -2px;
+  line-height: 120%;
 }
 
 .mainWorksGridUpperText > div:nth-child(2) {
   font-size: max(30px, 2vw);
   font-weight: 700;
   letter-spacing: -2px;
+  line-height: 120%;
 }
 
 .mainWorksGridUpperText > div:nth-child(3) {
@@ -112,7 +119,7 @@
   bottom: 0px;
   font-family: "IBMPlexSansKr";
   opacity: 0.8;
-  transform: translateY(7px);
+  transform: translateY(1px);
 }
 
 @media (max-width: 1599px) {

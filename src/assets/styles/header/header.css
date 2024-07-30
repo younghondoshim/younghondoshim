@@ -6,9 +6,10 @@
   height: 100svh;
   min-height: 800px;
   width: 100%;
+  z-index: 10;
 }
 
-.headerWrap:after {
+/* .headerWrap:after {
   content: "";
   background-image: url("/src/assets/images/filmgrain.png");
   height: 300%;
@@ -16,7 +17,7 @@
   position: fixed;
   opacity: 0.05;
   animation: animateGrain 8s steps(10) infinite;
-}
+} */
 
 @keyframes animateGrain {
   0%,

@@ -7,6 +7,7 @@
   color: #04260c;
   position: relative;
   z-index: 1;
+  margin-bottom: 20svh;
 }
 
 .mainTitleFlex {
@@ -48,15 +49,15 @@
 }
 
 .mainTileMiddleText {
-  font-size: max(90px, 10.4vw);
+  font-size: max(90px, 11.3vw);
   font-family: "gravesend-sans";
   font-weight: 700;
   line-height: 8.5vw;
   transform: scaleY(1.5) translateX(-1vw);
-  padding: 4.5vw 0px;
+  padding: 3.5vw 0px;
 }
 
-.mainTitleLowerText3 > img {
+.mainTitleLowerText3 > a > img {
   width: 25px;
   margin-right: 20px;
   margin-top: 15px;
@@ -64,14 +65,16 @@
   cursor: pointer;
   opacity: 0.6;
 }
+.mainTitleLowerText3 > a:nth-child(2) > img {
+  padding-top: 3px;
+}
 
-.mainTitleLowerText3 > img:hover {
+.mainTitleLowerText3 > a > img:hover {
   transition: all 0.3s ease;
   opacity: 1;
 }
 
 .mainTitleLowerText1 {
-  margin-top: 0.7vw;
   font-size: 20px;
   font-family: "Typewcond";
   font-weight: 700;
@@ -79,12 +82,11 @@
 }
 
 .mainTitleLowerText2 {
-  margin-top: 20px;
   opacity: 0.8;
 }
 
 .mainTileMiddleText1 {
-  letter-spacing: -0.08em;
+  letter-spacing: -0.01em;
 }
 
 .mainTileMiddleText1 > div,
@@ -96,7 +98,9 @@
 }
 
 .mainTileMiddleText2 {
-  letter-spacing: -0.055em;
+  letter-spacing: 0.265em;
+  line-height: 0vw;
+  padding-left: 0.5vw;
 }
 
 @media (max-width: 1199px) {
@@ -173,7 +177,7 @@
     transform: translateY(5.5vw);
   }
 
-  .mainTitleLowerText3 > img {
+  .mainTitleLowerText3 > a > img {
     width: 25px;
     margin-right: 20px;
     margin-top: 5px;
@@ -232,7 +236,7 @@
     transform: translateY(0.1vw);
   }
 
-  .mainTitleLowerText3 > img {
+  .mainTitleLowerText3 > a > img {
     width: 20px;
     margin-right: 20px;
     margin-top: 5px;

@@ -24,22 +24,31 @@ function MainIntroduce() {
       <div className="mainIntroduceFlex">
         <div className="mainIntroduceText">
           <FadeInEffect onComplete={handleMainTriggerNext1}>
-            <div className="mainIntroduceUpperText">[Rethink HIPHOP]</div>
+            <div className="mainIntroduceUpperText">Rethink.</div>
 
             <EventChain show={mainTriggernext1} timer={0}>
               <div className="mainIntroduceMiddleText">
-                더미텍스트는 감성적인 멜로디와 깊이 있는 가사로 많은 사람들의
-                마음을 사로잡으며, 다양한 장르를 넘나들며 독창적인 음악 세계를
-                구축하고 있습니다.
+                <div>2020년에 을지로에서 시작한 영혼도심은 '서울 도심'에</div>
+                <div>위치한 것에 착안하여 Seoul과 Soul 발음의 유사성을</div>
+                <div>활용하여 지은 이름입니다.</div>
               </div>
             </EventChain>
 
             <EventChain show={mainTriggernext2} timer={0}>
               <div className="mainIntroduceLowerText">
-                이 음악가는 감성적인 멜로디와 깊이 있는 가사로 많은 사람들의
-                마음을 사로잡습니다. 다양한 장르를 넘나들며 독창적인 음악 세계를
-                구축하고 있으며, 라이브 공연에서 보여주는 에너지와 열정으로
-                팬들에게 잊지 못할 경험을 선사합니다
+                <div>
+                  흑인 문화에서 정겨운 음식을 가리킬 때 Soul Food라고 하는 등
+                  Soul을 강조하는데, 영혼이 있는 음악을 만들고 싶은 소망을
+                  담았습니다.
+                </div>
+                <div>
+                  이레네(RENE)는 영혼도심의 프로듀서로서 미국에서 대학생 시절
+                  처음 힙합을 좋아하게 되었고, 비트를 만들기 시작하였습니다.
+                </div>
+                <div>
+                  다양한 장르를 넘나들며 새롭고 신선하지만 울림 있는 그런 음악을
+                  만들기 위해 한 걸음씩 나아갑니다.
+                </div>
               </div>
             </EventChain>
           </FadeInEffect>

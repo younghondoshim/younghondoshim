@@ -7,8 +7,8 @@ import Insta from "../../assets/images/instaIconGreen.svg";
 import Cart from "../../assets/images/CartIconGreen.svg";
 import ArrowUp from "../../assets/images/arrowUp.svg";
 import EventChain from "../animation/EventChain";
-import LazyLoadWrapper from "../animation/LazyLoadWrapper";
-import TextTypingAni from "../animation/TypingEffect";
+// import LazyLoadWrapper from "../animation/LazyLoadWrapper";
+import FadeInEffect from "../animation/FadeInEffect";
 
 function MainCallToAction() {
   const [isTextTypingCompleted3, setIsTextTypingCompleted3] = useState(false);
@@ -24,66 +24,87 @@ function MainCallToAction() {
       <div></div>
       <div className="mainCallToActionBox">
         <div className="mainCallToActionTitle">
-          <LazyLoadWrapper>
-            <TextTypingAni
-              text={"CONTECT ME"}
-              onComplete={handleTypingComplete3}
-              duration={0}
-            />
-          </LazyLoadWrapper>
+          <FadeInEffect onComplete={handleTypingComplete3}>
+            BE CONNECTED
+          </FadeInEffect>
         </div>
 
         <EventChain show={isTextTypingCompleted3} timer={600}>
           <div className="mainCallToActionTitleGrid">
-            <div>
-              <div className="mainCallToActionTextArea">
-                <div>감성적인 멜로디와 깊이 있는 가사로</div>
-                <div>청중의 마음을 울리는 음악가입니다.</div>
-                <div> 다양한 장르를 넘나들며</div>
-                <div>독창적인 음악을 선보입니다.</div>
-              </div>
-              <div className="mainCallToActionImgArea">
-                <div className="mainCallToActionImgAreaWrap">
-                  <div>Bandcamp</div>
-                  <div>
+            <div className="mainCallToActionImgArea">
+              <div className="mainCallToActionImgAreaWrap">
+                <div>Bandcamp</div>
+                <div>
+                  <a
+                    href="https://younghondoshim.bandcamp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img
                       src={Bandcamp}
                       alt="BandCampIcon"
                       className="BandCampIcon"
                     />
-                  </div>
+                  </a>
                 </div>
-                <div className="mainCallToActionImgAreaWrap">
-                  <div>YouTube</div>
-                  <div>
+              </div>
+              <div className="mainCallToActionImgAreaWrap">
+                <div>YouTube</div>
+                <div>
+                  <a
+                    href="https://www.youtube.com/@younghondoshim"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img
                       src={Youtube}
                       alt="YouTubeIcon"
                       className="YouTubeIcon"
                     />
-                  </div>
+                  </a>
                 </div>
-                <div className="mainCallToActionImgAreaWrap">
-                  <div>Instagram</div>
-                  <div>
+              </div>
+              <div className="mainCallToActionImgAreaWrap">
+                <div>Instagram</div>
+                <div>
+                  <a
+                    href="https://instagram.com/younghondoshim"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img
                       src={Insta}
                       alt="InstagramIcon"
                       className="InstagramIcon"
                     />
-                  </div>
+                  </a>
                 </div>
-                <div className="mainCallToActionImgAreaWrap">
-                  <div>Market</div>
-                  <div>
+              </div>
+              <div className="mainCallToActionImgAreaWrap">
+                <div>Market</div>
+                <div>
+                  <a
+                    href="https://smartstore.naver.com/younghondoshim"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img src={Cart} alt="CartIcon" className="CartIcon" />
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
+
             <div className="mainCallToActionFooter">
               <div className="mainCallToActionFooterLeft">
-                <div>
+                <div className="mainCallToActionTextArea">
+                  <div>younghondoshim@outlook.com</div>
+                </div>
+                <div className="mainCallToActionEmail">
+                  <span>사이트 제작 문의</span> <span>yuhan6653@gmail.com</span>
+                </div>
+              </div>
+              <div className="mainCallToActionFooterRight">
+                <div className="mainCallToActtionFooterArrowUp">
                   <img
                     src={ArrowUp}
                     alt="ArrowUp"
@@ -91,11 +112,6 @@ function MainCallToAction() {
                     onClick={scrollToTop}
                   />
                 </div>
-                <div className="mainCallToActionEmail">
-                  <span>사이트 제작 문의</span> <span>yuhan6653@gmail.com</span>
-                </div>
-              </div>
-              <div className="mainCallToActionFooterRight">
                 <img
                   src={Logo}
                   alt="younghondoshimLogo"
