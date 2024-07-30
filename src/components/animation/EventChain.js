@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../../assets/styles/animation/FadeInEffect.css";
-const EventChain = ({ show, children, timer = 1000 }) => {
+const EventChain = ({ show, children, onComplete, timer = 1000 }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -14,6 +14,11 @@ const EventChain = ({ show, children, timer = 1000 }) => {
     }
     return () => clearTimeout(timeout);
   }, [show, timer]);
+  useEffect(() => {
+    if (onComplete) {
+      onComplete();
+    }
+  }, [onComplete]);
 
   return (
     <div className={`fade-in-section${isVisible ? "Is-visible" : ""}`}>

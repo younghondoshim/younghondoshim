@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "../../";
 
 const TextTypingAni = ({ text, onComplete, duration = 0, startDelay = 0 }) => {
   const [sequence, setSequence] = useState("");
@@ -51,7 +52,7 @@ const TextTypingAni = ({ text, onComplete, duration = 0, startDelay = 0 }) => {
     return () => clearInterval(typingInterval); // 컴포넌트가 마운트 해제되거나, 재렌더링 될 때마다 setInterval를 정리하는 함수를 반환함.
   }, [text, textCount, isTypingPaused]); // 해당 상태들이 변경될 때마다 useEffect가 다시 실행 됨
 
-  return <div>{sequence}</div>;
+  return <div className="textAniHeight">{sequence}</div>;
 };
 
 export default TextTypingAni;

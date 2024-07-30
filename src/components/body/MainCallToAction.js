@@ -6,7 +6,7 @@ import Youtube from "../../assets/images/youtubeIconGreen.svg";
 import Insta from "../../assets/images/instaIconGreen.svg";
 import Cart from "../../assets/images/CartIconGreen.svg";
 import ArrowUp from "../../assets/images/arrowUp.svg";
-import FadeInEffect from "../animation/EventChain";
+import EventChain from "../animation/EventChain";
 import LazyLoadWrapper from "../animation/LazyLoadWrapper";
 import TextTypingAni from "../animation/TypingEffect";
 
@@ -33,7 +33,7 @@ function MainCallToAction() {
           </LazyLoadWrapper>
         </div>
 
-        <FadeInEffect show={isTextTypingCompleted3} timer={600}>
+        <EventChain show={isTextTypingCompleted3} timer={600}>
           <div className="mainCallToActionTitleGrid">
             <div>
               <div className="mainCallToActionTextArea">
@@ -104,7 +104,7 @@ function MainCallToAction() {
               </div>
             </div>
           </div>
-        </FadeInEffect>
+        </EventChain>
       </div>
     </div>
   );

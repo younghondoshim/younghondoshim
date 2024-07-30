@@ -13,6 +13,7 @@ function MainWorks() {
       setIsTextTypingCompleted2(true);
     }, 250);
   };
+
   return (
     <div className="mainWorksWrap">
       <div></div>
@@ -21,7 +22,7 @@ function MainWorks() {
           <LazyLoadWrapper>
             <TextTypingAni
               text={"DISCOGRAPHY"}
-              onComplete={handleTypingComplete2}
+              onComplete={() => handleTypingComplete2(true)}
               duration={0}
             />
           </LazyLoadWrapper>
