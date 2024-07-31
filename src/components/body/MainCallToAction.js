@@ -113,11 +113,17 @@ function MainCallToAction() {
                   </div>
                 </div>
                 <div className="mainCallToActionFooterRight">
-                  <img
-                    src={Logo}
-                    alt="younghondoshimLogo"
-                    className="younghondoshimLogo"
-                  />
+                  <a
+                    href="https://younghondoshim.bandcamp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={Logo}
+                      alt="younghondoshimLogo"
+                      className="younghondoshimLogo"
+                    />
+                  </a>
                 </div>
               </div>
             </div>
