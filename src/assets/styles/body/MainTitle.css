@@ -27,6 +27,7 @@
   transform: translateY(1vw);
   font-size: 20px;
   opacity: 0.8;
+  margin-bottom: 1vw;
 }
 
 .mainTileMiddleText1 > div:first-child {
@@ -38,6 +39,7 @@
   min-width: 140px;
   object-fit: cover;
   margin-top: 10px;
+  transform: translateX(-2px);
 }
 
 .mainTitleLowerText3 {
@@ -49,12 +51,16 @@
 }
 
 .mainTileMiddleText {
-  font-size: max(90px, 11.3vw);
+  font-size: max(90px, 11.4vw);
   font-family: "gravesend-sans";
   font-weight: 700;
   line-height: 8.5vw;
   transform: scaleY(1.5) translateX(-1vw);
   padding: 3.5vw 0px;
+}
+
+.mainTitleLowerText {
+  margin-top: 1vw;
 }
 
 .mainTitleLowerText3 > a > img {
@@ -93,9 +99,6 @@
 .mainTileMiddleText2 > div {
   display: inline-block;
 }
-.mainTileMiddleText2 > div:nth-child(1) {
-  padding-right: 2.2vw;
-}
 
 .mainTileMiddleText2 {
   letter-spacing: 0.265em;
@@ -103,16 +106,37 @@
   padding-left: 0.5vw;
 }
 
+.mainTitleShow1 {
+  display: block;
+}
+
+.mainTitleShow2 {
+  display: none;
+}
+
 @media (max-width: 1199px) {
   .mainTileMiddleText1 > div,
   .mainTileMiddleText2 > div {
     display: block;
   }
-  .mainTileMiddleText {
-    font-size: max(55px, 12vw);
-    line-height: 9vw;
-    transform: scaleY(1.2) translateX(-1vw);
+
+  .mainTitleUpperText {
+    margin-bottom: 1.7vw;
   }
+
+  .mainTileMiddleText {
+    font-size: max(55px, 11.6vw);
+    line-height: 8vw;
+    transform: scaleY(1.4) translateX(-1vw);
+    padding: 1.5vw 0px;
+  }
+
+  .mainTileMiddleText2 {
+    letter-spacing: 0.268em;
+    line-height: 0vw;
+    padding-left: 0.5vw;
+  }
+
   .mainTitleUpperText {
     transform: translateY(0.5vw);
   }
@@ -126,12 +150,33 @@
 }
 
 @media (max-width: 849px) {
-  .mainTileMiddleText {
-    padding: 5vw 0px;
-    transform: scaleY(1.2);
-    font-size: max(55px, 18vw);
-    line-height: 15vw;
+  .mainTitleShow1 {
+    display: none;
+  }
+
+  .mainTitleShow2 {
+    display: block;
+  }
+  .mainTitleShow2 > .mainTileMiddleText1 {
+    padding: 8vw 0px 3.5vw;
+    transform: scaleY(1);
+    font-size: max(65px, 25vw);
+    line-height: 19vw;
     transform: translateX(-1.2vw);
+  }
+
+  .mainTitleShow2 > .mainTileMiddleText2 > div {
+    display: inline;
+    font-size: max(30px, 9.5vw);
+    letter-spacing: 0.04em;
+  }
+
+  .mainTitleShow2 > .mainTileMiddleText2 > div {
+    line-height: 4.5vw;
+  }
+
+  .mainTitleLowerText {
+    margin-top: 2vw;
   }
 
   .mainTileMiddleText1 > div,
@@ -159,16 +204,8 @@
     padding: 0px;
   }
 
-  .mainTileMiddleText1 {
-    letter-spacing: -0.08em;
-  }
-
-  .mainTileMiddleText2 {
-    letter-spacing: -0.1em;
-  }
-
   .mainTitleLowerText2 {
-    margin-top: 40px;
+    margin-top: 16vw;
   }
 
   .mainTitleUpperText {

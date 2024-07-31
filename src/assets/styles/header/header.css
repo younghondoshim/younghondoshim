@@ -8,7 +8,9 @@
   width: 100%;
 }
 
-/* .headerWrap:after {
+/*
+  치지직 거리는 애니메이션 효과
+.headerWrap:after {
   content: "";
   background-image: url("/src/assets/images/filmgrain.png");
   height: 300%;

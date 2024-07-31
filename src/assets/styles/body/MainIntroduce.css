@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 4fr 5fr 1fr;
   grid-gap: 20px;
-  height: 85svh;
+  height: 55svh;
   min-height: 750px;
   width: 100%;
   color: #04260c;
@@ -13,10 +13,11 @@
 .mainIntroduceFlex {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .mainIntroduceText {
-  width: 100%;
+  width: 860px;
 }
 
 .mainIntroduceUpperText {
@@ -29,7 +30,7 @@
 
 .mainIntroduceMiddleText {
   font-family: "IBMPlexSansKr";
-  font-size: max(30px, 2vw);
+  font-size: 40px;
   font-weight: 700;
   line-height: 120%;
   letter-spacing: -2px;
@@ -38,11 +39,11 @@
 }
 
 .mainIntroduceMiddleText > div:first-child {
-  letter-spacing: 0.006em;
+  letter-spacing: -0.02em;
 }
 
 .mainIntroduceMiddleText > div:nth-child(2) {
-  letter-spacing: 0.029em;
+  letter-spacing: 0.003em;
 }
 
 .mainIntroduceLowerText {
@@ -57,19 +58,122 @@
   letter-spacing: 0.0445em;
 }
 
+.mainIntroduceShow2 {
+  display: none;
+}
+
+.mainIntroduceShow1 {
+  display: block;
+}
+
+.mainIntroduceShow3 {
+  display: none;
+}
+
 @media (max-width: 1199px) {
   .mainIntroduceWrap {
-    grid-template-columns: 6fr 6fr;
-  }
-  .mainIntroduceFlex {
-    margin-right: 40px;
+    grid-template-columns: 4fr 6fr 1fr;
   }
   .mainIntroduceWrap {
     height: 85svh;
   }
+
+  .mainIntroduceShow2 {
+    display: block;
+  }
+  .mainIntroduceShow1 {
+    display: none;
+  }
+
+  .mainIntroduceShow3 {
+    display: none;
+  }
+  .mainIntroduceText {
+    width: 675px;
+  }
+
+  .mainIntroduceMiddleText > div:first-child {
+    letter-spacing: 0em;
+  }
+
+  .mainIntroduceMiddleText > div:nth-child(2) {
+    letter-spacing: -0.045em;
+  }
+
+  .mainIntroduceMiddleText > div:nth-child(3) {
+    letter-spacing: -0.105em;
+  }
+
+  .mainIntroduceLowerText {
+    line-height: 150%;
+  }
+
+  .mainIntroduceLowerText > div:first-child {
+    letter-spacing: 0.015em;
+  }
+
+  .mainIntroduceLowerText > div:nth-child(2) {
+    letter-spacing: -0.029em;
+  }
+
+  .mainIntroduceLowerText > div:nth-child(3) {
+    letter-spacing: 0.021em;
+  }
 }
 
 @media (max-width: 849px) {
+  .mainIntroduceShow1 {
+    display: none;
+  }
+
+  .mainIntroduceShow2 {
+    display: none;
+  }
+
+  .mainIntroduceShow3 {
+    display: block;
+  }
+
+  .mainIntroduceWrap.mainIntroduceShow3 > div {
+    line-height: 125%;
+  }
+
+  .mainIntroduceMiddleText > div:first-child {
+    letter-spacing: 0.02em;
+  }
+
+  .mainIntroduceMiddleText > div:nth-child(2) {
+    letter-spacing: -0.045em;
+  }
+
+  .mainIntroduceMiddleText > div:nth-child(3) {
+    letter-spacing: -0.115em;
+  }
+
+  .mainIntroduceMiddleText > div:nth-child(4) {
+    letter-spacing: -0.115em;
+  }
+
+  .mainIntroduceLowerText > div:first-child {
+    letter-spacing: -0.045em;
+  }
+
+  .mainIntroduceLowerText > div:nth-child(2) {
+    letter-spacing: -0.029em;
+  }
+
+  .mainIntroduceLowerText > div:nth-child(3) {
+    letter-spacing: 0.05em;
+  }
+
+  .mainIntroduceLowerText > div:nth-child(4) {
+    letter-spacing: 0.001em;
+  }
+
+  .mainIntroduceShow3.mainIntroduceLowerText {
+    margin-top: 30px;
+  }
+
   .mainIntroduceFlex {
     margin-right: 20px;
   }
@@ -78,15 +182,51 @@
     min-height: 1px;
   }
 
-  .mainIntroduceText {
-    margin: 0px 20px;
+  .mainIntroduceLowerText.mainIntroduceShow3 {
+    line-height: 150%;
   }
 
-  .mainIntroduceMiddleText {
-    font-size: max(25px, 4.5vw);
+  .mainIntroduceText {
+    margin: 0px 0px;
+    width: 495px;
   }
+
   .mainIntroduceWrap {
     height: 85svh;
+  }
+}
+
+@media (max-width: 600px) {
+  .mainIntroduceFlex {
+    width: 100%;
+  }
+
+  .mainIntroduceMiddleText.mainIntroduceShow3 {
+    font-size: 30px;
+  }
+  .mainIntroduceLowerText.mainIntroduceShow3 > div {
+    display: inline;
+    margin-right: 8px;
+  }
+
+  .mainIntroduceText {
+    margin: 0px 0px;
+    width: 375px;
+    margin-left: 20px;
+  }
+
+  .mainIntroduceFlex {
+    margin-right: 0px;
+  }
+
+  .mainIntroduceWrap {
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+    min-height: 1px;
+  }
+
+  .mainIntroduceFlex {
+    justify-content: flex-start;
   }
 }
 
@@ -99,6 +239,20 @@
     min-height: 1px;
   }
 
+  .mainIntroduceMiddleText.mainIntroduceShow3 > div {
+    display: inline;
+    letter-spacing: -0.05em;
+  }
+  .mainIntroduceLowerText.mainIntroduceShow3 > div {
+    letter-spacing: -0.05em;
+  }
+
+  .mainIntroduceText {
+    margin: 0px 0px;
+    width: 335px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
   .mainIntroduceWrap > div:first-child {
     height: 0px;
     display: none;

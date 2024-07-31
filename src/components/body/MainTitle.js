@@ -15,14 +15,26 @@ function MainTitle() {
       <div className="mainTitleFlex">
         <div className="mainTitleBox">
           <div className="mainTitleUpperText">마음을 잇는</div>
-          <div className="mainTileMiddleText">
-            <div className="mainTileMiddleText1">
+          <div className="mainTileMiddleText mainTitleShow1">
+            <div className="mainTileMiddleText1 ">
               <div>
                 <SizeUpEffect>HEART + SOUL</SizeUpEffect>
               </div>
             </div>
             <div className="mainTileMiddleText2">
               <SizeUpEffect2>RHYMES & BEATS</SizeUpEffect2>
+            </div>
+          </div>
+          <div className="mainTileMiddleText mainTitleShow2">
+            <div className="mainTileMiddleText1">
+              <div>
+                <SizeUpEffect>HEART </SizeUpEffect>
+                <SizeUpEffect>+ SOUL</SizeUpEffect>
+              </div>
+            </div>
+            <div className="mainTileMiddleText2">
+              <SizeUpEffect2>RHYMES </SizeUpEffect2>
+              <SizeUpEffect2>& BEATS</SizeUpEffect2>
             </div>
           </div>
           <div className="mainTitleLowerText">

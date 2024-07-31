@@ -80,21 +80,21 @@
 }
 
 .mainWorksGridUpperText > div:first-child {
-  font-size: max(30px, 2vw);
+  font-size: 40px;
   font-weight: 700;
   letter-spacing: -2px;
   line-height: 120%;
 }
 
 .mainWorksGridUpperText > div:nth-child(2) {
-  font-size: max(30px, 2vw);
+  font-size: 40px;
   font-weight: 700;
   letter-spacing: -2px;
   line-height: 120%;
 }
 
 .mainWorksGridUpperText > div:nth-child(3) {
-  font-weight: 700;
+  font-weight: 400;
   opacity: 0.8;
   transition: all 0.3s;
   letter-spacing: -1px;
@@ -108,7 +108,7 @@
 }
 
 .mainWorksGridUpperText > div:nth-child(3):hover {
-  font-weight: 700;
+  font-weight: 400;
   opacity: 1;
   transition: all 0.3s;
 }
@@ -117,9 +117,10 @@
   position: absolute;
   right: 20px;
   bottom: 0px;
-  font-family: "IBMPlexSansKr";
+  font-family: "Typewcond";
   opacity: 0.8;
   transform: translateY(1px);
+  font-size: 20px;
 }
 
 @media (max-width: 1599px) {
@@ -313,7 +314,7 @@
   }
 
   .mainWorksTitle {
-    font-size: 13vw;
+    font-size: 12vw;
     padding-left: 20px;
     padding-top: 0px;
     margin-bottom: 20px;
@@ -378,7 +379,18 @@
   }
 }
 
+@media (max-width: 600px) {
+  .mainWorksTitle {
+    transform: scaleY(1.2) translateX(-3px);
+  }
+}
+
 @media (max-width: 499px) {
+  .mainTitleShow2 > .mainTileMiddleText2 > div {
+    display: inline;
+    font-size: max(30px, 8.5vw);
+    letter-spacing: 0.04em;
+  }
   .mainWorksBox {
     margin-right: 0;
   }
@@ -440,5 +452,6 @@
     grid-row-start: 6;
     grid-row-end: 7;
     transform: translateY(-20px);
+    margin-top: 20px;
   }
 }

@@ -7,11 +7,14 @@
   color: #04260c;
   position: relative;
   z-index: 1;
-  margin-top: 20svh;
+  margin-top: 10svh;
 }
 
 .mainCallToActionBox {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .mainCallToActionTitle {
@@ -26,18 +29,18 @@
 }
 
 .mainCallToActionTextArea {
-  padding-top: 20px;
+  padding-top: 16px;
   font-size: 20px;
-  font-family: "IBMPlexSansKr";
+  font-family: "Typewcond";
   padding-left: 0px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 120%;
   opacity: 0.8;
-  letter-spacing: -2px;
+  letter-spacing: -0.5px;
 }
 
 .mainCallToActionTextArea > div:first-child {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .mainCallToActionImgArea {
   margin-top: 30px;
@@ -50,8 +53,8 @@
   justify-content: space-between;
   width: 250px;
   margin-left: 20px;
-  height: max(30px, 2vw);
-  line-height: max(30px, 2vw);
+  height: 40px;
+  line-height: 40px;
   margin-top: 8px;
   opacity: 0.8;
   transition: all 0.3s ease;
@@ -68,18 +71,23 @@
 
 .mainCallToActionImgArea > div > div:nth-child(2) > a > img {
   width: 30px;
-  object-fit: cover;
 }
 
 .CartIcon {
   transform: translateX(-2px);
 }
 
+.mainEventChainWraper {
+  width: 100%;
+  height: 460px;
+  overflow: hidden;
+}
+
 .mainCallToActionTitleGrid {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: calc(530px - 4vw);
+  height: 100%;
   margin-left: 20px;
 }
 
@@ -89,12 +97,13 @@
 
 .mainCallToActionFooter {
   width: 100%;
-  height: 150px;
+  height: 200px;
+  position: relative;
 }
 .mainCallToActionFooterLeft {
   position: absolute;
   bottom: 40px;
-  left: 20px;
+  left: 0px;
 }
 
 .mainCallToActionFooterRight {
@@ -107,19 +116,18 @@
 }
 
 .younghondoshimLogo {
-  width: 9vw;
-  min-width: 140px;
+  width: 170px;
   object-fit: cover;
 }
 .mainCallToActtionFooterArrowUp {
-  right: 20px;
+  left: 20px;
   display: inline;
   width: 40px;
 }
 .ArrowUp {
   width: 40px;
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-top: 10px;
   opacity: 0.8;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -143,7 +151,7 @@
 }
 
 .mainCallToActionImgAreaWrap > div {
-  font-size: max(30px, 2vw);
+  font-size: 40px;
 }
 
 .mainCallToActionImgAreaWrap:hover {
@@ -151,12 +159,26 @@
   transition: all 0.3s ease;
 }
 
+.mainCallToActionImgArea > div {
+  margin-left: 0px;
+}
+
+.mainCallToActionFooterLeft {
+  left: 0px;
+  bottom: 40px;
+}
+
+.mainCallToActionFooterRight {
+  right: 0px;
+  bottom: 40px;
+}
+
 @media (max-width: 1199px) {
   .mainCallToActionTitle {
     padding-left: 10px;
   }
   .mainCallToActionTitleGrid {
-    height: calc(740px - 6vw);
+    height: 100%;
   }
 }
 
@@ -176,7 +198,7 @@
     display: none;
   }
   .mainCallToActionTitle {
-    font-size: 13vw;
+    font-size: 12vw;
     padding: 0px;
     margin-bottom: 20px;
   }
@@ -192,25 +214,40 @@
   .mainCallToActionTextArea > div {
     display: block;
   }
-}
 
-.mainCallToActionImgArea > div {
-  margin-left: 0px;
+  .mainCallToActionTitleGrid {
+    margin-left: 0px;
+  }
 }
+@media (max-width: 600px) {
+  .mainCallToActionImgAreaWrap > div {
+    font-size: 30px;
+  }
 
-.mainCallToActionFooterLeft {
-  left: 20px;
-  bottom: 60px;
-}
+  .younghondoshimLogo {
+    width: 80px;
+  }
 
-.mainCallToActionFooterRight {
-  right: 0px;
-  bottom: 60px;
+  .mainCallToActionTitle {
+    transform: scaleY(1.2) translateX(-3px);
+  }
+  .mainCallToAction {
+    height: 80svh;
+  }
 }
 
 @media (max-width: 499px) {
+  .mainCallToActionImgAreaWrap > div {
+    font-size: 25px;
+  }
+
+  .mainCallToActionImgArea > div {
+    height: 30px;
+    line-height: 30px;
+  }
+
   .mainCallToAction {
-    height: 90svh;
+    height: 70svh;
   }
   .mainCallToActionImgArea {
     margin-top: 50px;
@@ -236,7 +273,7 @@
   }
 
   .mainCallToActionTextArea {
-    font-size: 25px;
+    font-size: 16px;
     padding-top: 0px;
     padding-left: 0px;
     padding-bottom: 0px;
@@ -246,18 +283,15 @@
   }
   .mainCallToActionImgArea > div {
     margin-left: 0px;
+    width: 180px;
   }
   .mainCallToActionTextArea > div {
     display: inline;
     margin-right: 10px;
   }
-
-  .mainCallToActionTitleGrid {
-    height: calc(550px - 3vw);
-  }
   .mainCallToActionFooterLeft {
     left: 0px;
-    bottom: 20px;
+    bottom: 40px;
   }
   .mainCallToActionFooterRight {
     right: 0px;
