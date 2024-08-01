@@ -11,12 +11,12 @@ function MainIntroduce() {
     setTimeout(() => {
       setmainTriggernext1(true);
       handleMainTriggerNext2();
-    }, 400);
+    }, 300);
   };
   const handleMainTriggerNext2 = () => {
     setTimeout(() => {
       setmainTriggernext2(true);
-    }, 400);
+    }, 300);
   };
   return (
     <div className="mainIntroduceWrap">
