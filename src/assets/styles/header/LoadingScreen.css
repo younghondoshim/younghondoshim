@@ -9,17 +9,18 @@
   background-color: #f3f1ee;
   z-index: 100;
   align-items: center;
+  justify-content: center;
 }
 
 .loadingWrap > div:first-child {
   transform: translateY(80px);
 }
-
 .loadingText {
   font-size: 40px;
   font-family: "Typewcond";
   color: #04260c;
   position: relative;
+
   text-align: center;
   display: inline;
   transition: all 1s;
@@ -34,11 +35,23 @@
   margin-right: 0px;
 }
 
+.loadingTextAreaWidth {
+  width: 454px;
+  height: 2px;
+  background-color: #f3f1ee;
+  overflow: hidden;
+  padding-top: 70px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .loadingTextAreaWrap {
   position: absolute;
+  width: 100%;
   z-index: 10;
+  text-align: center;
   left: 50%;
-  transform: translateX(-50%) translateY(-60px);
+  transform: translateX(-50%) translateY(-70px);
 }
 
 .loadingTextWrap1 {
@@ -72,6 +85,14 @@
     font-size: 30px;
   }
 
+  .loadingTextAreaWrap {
+    transform: translateX(-50%) translateY(-55px);
+  }
+
+  .loadingTextAreaWidth {
+    width: 342px;
+  }
+
   .loadingTextWrap1 {
     display: inline-block;
     margin-right: 15px;
@@ -95,13 +116,15 @@
     grid-template-columns: 2fr 8fr 2fr;
   }
   .loadingTextAreaWrap {
-    padding: 0px 20px;
-    width: 100%;
     text-align: center;
     transform: translateX(-50%) translateY(-40px);
   }
   .loadingText {
     font-size: 22px;
+  }
+
+  .loadingTextAreaWidth {
+    width: 252px;
   }
 
   .loadingTextWrap1 {

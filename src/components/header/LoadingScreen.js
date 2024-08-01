@@ -7,7 +7,11 @@ function LoadingScreen({ onUnmount }) {
   const [animationCompleted2, setAnimationCompleted2] = useState(false);
   const [animationCompleted3, setAnimationCompleted3] = useState(false);
   const [fadeOut, setFadeOut] = useState(false);
-
+  useEffect(() => {
+    setTimeout(() => {
+      setAnimationCompleted1(true);
+    }, 1800);
+  }, []);
   useEffect(() => {
     if (animationCompleted1) {
       const timer = setTimeout(() => {
@@ -29,7 +33,7 @@ function LoadingScreen({ onUnmount }) {
     if (animationCompleted3) {
       const timer = setTimeout(() => {
         setFadeOut(true);
-      }, 1500); // 1초 후 페이드 아웃 시작
+      }, 800); // 1초 후 페이드 아웃 시작
       return () => clearTimeout(timer);
     }
   }, [animationCompleted3]);
@@ -53,16 +57,10 @@ function LoadingScreen({ onUnmount }) {
           initial={{ opacity: 1 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
         >
           <div></div>
-          <div
-            style={{
-              width: "100%",
-              height: "2px",
-              backgroundColor: "#f3f1ee",
-              overflow: "hidden",
-            }}
-          >
+          <div className="loadingTextAreaWidth">
             <motion.div
               style={{
                 height: "100%",
@@ -70,16 +68,15 @@ function LoadingScreen({ onUnmount }) {
               }}
               initial={{ width: "0%", x: 0, opacity: 1 }}
               animate={{
-                width: ["0%", "100%", "100%", "100%"],
-                x: ["0%", "0%", "100%", "100%"],
-                opacity: [1, 1, 1, 0],
+                width: ["0%", "100%", "100%", "100%", "100%"],
+                x: ["0%", "0%", "0%", "100%", "100%"],
+                opacity: [1, 1, 1, 1, 0],
               }}
               transition={{
                 ease: "linear",
-                duration: 2,
-                times: [0, 0.75, 0.95, 1],
+                duration: 3,
+                times: [0, 0.6, 0.8, 0.9, 1],
               }}
-              onAnimationComplete={() => setAnimationCompleted1(true)}
             />
             <div className="loadingTextAreaWrap">
               <div className="loadingTextWrap1">
@@ -121,7 +118,7 @@ function LoadingScreen({ onUnmount }) {
                       }}
                       transition={{ duration: 0.5, times: [0, 0.5, 1] }}
                     >
-                      YOUNGHONDOSHIM
+                      Younghondoshim
                     </motion.div>
                   </div>
                 )}
