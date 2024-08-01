@@ -11,7 +11,7 @@ function MainWorks() {
   const handleTypingComplete2 = () => {
     setTimeout(() => {
       setIsTextTypingCompleted2(true);
-    }, 250);
+    }, 0);
   };
 
   return (
@@ -23,7 +23,7 @@ function MainWorks() {
             DISCOGRAPHY
           </FadeInEffect>
         </div>
-        <EventChain show={isTextTypingCompleted2} timer={650}>
+        <EventChain show={isTextTypingCompleted2} timer={400}>
           <div className="mainWorksGrid">
             <div className="mainWorksGridStyle mainWorksGridText mainWorksGridChangeStyle1">
               <div className="mainWorksGridUpperText">

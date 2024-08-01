@@ -1,6 +1,5 @@
 import React from "react";
 import "../../assets/styles/header/header.css";
-import BlurEffect from "../../components/animation/blurEffect.js";
 
 function Header() {
   return (
@@ -12,7 +11,6 @@ function Header() {
           </div>
           <div></div>
         </div>
-        <BlurEffect></BlurEffect>
       </div>
     </div>
   );

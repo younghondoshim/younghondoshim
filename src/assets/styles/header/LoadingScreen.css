@@ -1,0 +1,123 @@
+.loadingWrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  width: 100%;
+  height: 100%;
+  background-color: #f3f1ee;
+  z-index: 100;
+  align-items: center;
+}
+
+.loadingWrap > div:first-child {
+  transform: translateY(80px);
+}
+
+.loadingText {
+  font-size: 40px;
+  font-family: "Typewcond";
+  color: #04260c;
+  position: relative;
+  text-align: center;
+  display: inline;
+  transition: all 1s;
+}
+
+.loadingText > div {
+  display: inline;
+  margin-right: 20px;
+}
+
+.loadingText:last-child > div {
+  margin-right: 0px;
+}
+
+.loadingTextAreaWrap {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%) translateY(-60px);
+}
+
+.loadingTextWrap1 {
+  display: inline-block;
+  margin-right: 20px;
+  width: 126px;
+}
+
+.loadingTextWrap2 {
+  display: inline-block;
+  margin-right: 20px;
+  width: 36px;
+}
+
+.loadingTextWrap3 {
+  display: inline-block;
+  width: 252px;
+}
+.loadingText.visible {
+  visibility: visible; /* become visible when the 'visible' class is added */
+}
+
+@media (max-width: 1499px) {
+  .loadingWrap {
+    grid-template-columns: 3fr 6fr 3fr;
+  }
+}
+
+@media (max-width: 915px) {
+  .loadingText {
+    font-size: 30px;
+  }
+
+  .loadingTextWrap1 {
+    display: inline-block;
+    margin-right: 15px;
+    width: 95px;
+  }
+
+  .loadingTextWrap2 {
+    display: inline-block;
+    margin-right: 15px;
+    width: 27px;
+  }
+
+  .loadingTextWrap3 {
+    display: inline-block;
+    width: 190px;
+  }
+}
+
+@media (max-width: 691px) {
+  .loadingWrap {
+    grid-template-columns: 2fr 8fr 2fr;
+  }
+  .loadingTextAreaWrap {
+    padding: 0px 20px;
+    width: 100%;
+    text-align: center;
+    transform: translateX(-50%) translateY(-40px);
+  }
+  .loadingText {
+    font-size: 22px;
+  }
+
+  .loadingTextWrap1 {
+    display: inline-block;
+    margin-right: 11px;
+    width: 70px;
+  }
+
+  .loadingTextWrap2 {
+    display: inline-block;
+    margin-right: 11px;
+    width: 20px;
+  }
+
+  .loadingTextWrap3 {
+    display: inline-block;
+    width: 140px;
+  }
+}

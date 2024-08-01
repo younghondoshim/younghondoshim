@@ -14,7 +14,7 @@ function MainCallToAction() {
   const [isTextTypingCompleted3, setIsTextTypingCompleted3] = useState(false);
 
   const handleTypingComplete3 = () => {
-    setTimeout(() => setIsTextTypingCompleted3(true), 250);
+    setTimeout(() => setIsTextTypingCompleted3(true), 0);
   };
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -29,7 +29,7 @@ function MainCallToAction() {
           </FadeInEffect>
         </div>
         <div className="mainEventChainWraper">
-          <EventChain show={isTextTypingCompleted3} timer={600}>
+          <EventChain show={isTextTypingCompleted3} timer={400}>
             <div className="mainCallToActionTitleGrid">
               <div className="mainCallToActionImgArea">
                 <div className="mainCallToActionImgAreaWrap">
