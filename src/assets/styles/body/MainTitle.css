@@ -157,18 +157,26 @@
   .mainTitleShow2 {
     display: block;
   }
+  .mainTileMiddleText1 {
+    letter-spacing: 0.01em;
+  }
+
   .mainTitleShow2 > .mainTileMiddleText1 {
     padding: 8vw 0px 3.5vw;
     transform: scaleY(1);
-    font-size: max(65px, 25vw);
-    line-height: 19vw;
+    font-size: max(65px, 23.5vw);
+    line-height: 18vw;
     transform: translateX(-1.2vw);
+  }
+
+  .mainTitleShow2 > .mainTileMiddleText1 > div > div:first-child {
+    letter-spacing: 0.07em;
   }
 
   .mainTitleShow2 > .mainTileMiddleText2 > div {
     display: inline;
     font-size: max(30px, 9.5vw);
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
   }
 
   .mainTitleShow2 > .mainTileMiddleText2 > div {
@@ -200,7 +208,7 @@
   }
   .mainTitleBox {
     transform: translateY(0px);
-    margin: 0px 20px;
+    margin-left: 40px;
     padding: 0px;
   }
 
@@ -230,6 +238,18 @@
     line-height: 14vw;
   }
 
+  .mainTitleShow2 > .mainTileMiddleText1 {
+    font-size: max(55px, 21vw);
+  }
+
+  .mainTitleShow2 > .mainTileMiddleText1 > div > div:first-child {
+    letter-spacing: -0.05em;
+  }
+
+  .mainTitleShow2 > .mainTileMiddleText1 {
+    padding-top: 0px;
+  }
+
   .mainTileMiddleText1 > div,
   .mainTileMiddleText2 > div {
     display: block;
@@ -241,8 +261,9 @@
     min-height: 0;
   }
 
-  .mainTitleLowerText1 {
+  .mainTitleShow2 > .mainTileMiddleText2 > div {
     display: none;
+    font-size: max(25px, 7.2vw) !important;
   }
 
   .mainTitlewrap > div:first-child {
@@ -251,7 +272,7 @@
   }
   .mainTitleBox {
     transform: translateY(0px);
-    margin: 0px 20px;
+    margin-left: 40px;
     padding: 0px;
   }
 
@@ -270,7 +291,7 @@
   .mainTitleUpperText {
     font-family: "IBMPlexSansKr";
 
-    transform: translateY(0.1vw);
+    transform: translateY(6vw);
   }
 
   .mainTitleLowerText3 > a > img {

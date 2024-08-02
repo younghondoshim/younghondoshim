@@ -175,7 +175,7 @@
   }
 
   .mainIntroduceFlex {
-    margin-right: 20px;
+    margin-right: 40px;
   }
   .mainIntroduceWrap {
     grid-template-columns: 4fr 8fr;
@@ -249,16 +249,13 @@
 
   .mainIntroduceText {
     margin: 0px 0px;
-    width: 335px;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: calc(100% - 80px);
+    margin-left: 40px;
+    margin-right: 40px;
   }
   .mainIntroduceWrap > div:first-child {
     height: 0px;
     display: none;
-  }
-  .mainIntroduceText {
-    margin: 0px 20px;
   }
 
   .mainIntroduceMiddleText {

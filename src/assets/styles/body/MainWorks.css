@@ -303,6 +303,8 @@
 
   .mainWorksGrid {
     margin-top: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   .mainWorksGridText {
@@ -315,7 +317,7 @@
 
   .mainWorksTitle {
     font-size: 12vw;
-    padding-left: 20px;
+    padding-left: 40px;
     padding-top: 0px;
     margin-bottom: 20px;
   }
@@ -400,7 +402,7 @@
 
   .mainWorksTitle {
     font-size: 11vw;
-    padding-left: 20px;
+    padding-left: 40px;
     padding-top: 0px;
   }
 

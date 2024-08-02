@@ -33,7 +33,7 @@ function LoadingScreen({ onUnmount }) {
     if (animationCompleted3) {
       const timer = setTimeout(() => {
         setFadeOut(true);
-      }, 800); // 1초 후 페이드 아웃 시작
+      }, 1800); // 1초 후 페이드 아웃 시작
       return () => clearTimeout(timer);
     }
   }, [animationCompleted3]);
@@ -62,6 +62,7 @@ function LoadingScreen({ onUnmount }) {
           <div></div>
           <div className="loadingTextAreaWidth">
             <motion.div
+              className="LoadinganimationWidth"
               style={{
                 height: "100%",
                 backgroundColor: "#04260c",
@@ -118,7 +119,7 @@ function LoadingScreen({ onUnmount }) {
                       }}
                       transition={{ duration: 0.5, times: [0, 0.5, 1] }}
                     >
-                      Younghondoshim
+                      Sanctuary
                     </motion.div>
                   </div>
                 )}
