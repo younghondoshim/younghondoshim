@@ -316,7 +316,7 @@
   }
 
   .mainWorksTitle {
-    font-size: 12vw;
+    font-size: 11vw;
     padding-left: 40px;
     padding-top: 0px;
     margin-bottom: 20px;
@@ -381,7 +381,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
   .mainWorksTitle {
     transform: scaleY(1.2) translateX(-3px);
   }

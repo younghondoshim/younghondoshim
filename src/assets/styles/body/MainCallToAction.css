@@ -198,7 +198,7 @@
     display: none;
   }
   .mainCallToActionTitle {
-    font-size: 12vw;
+    font-size: 11vw;
     padding: 0px;
     margin-bottom: 20px;
     transform: translateX(-8px) scaleY(1.2);
@@ -220,7 +220,7 @@
     margin-left: 0px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 620px) {
   .mainCallToActionImgAreaWrap > div {
     font-size: 30px;
   }
@@ -251,7 +251,7 @@
     height: 70svh;
   }
   .mainCallToActionImgArea {
-    margin-top: 50px;
+    margin-top: 170px;
   }
   .mainCallToActionBox {
     transform: translateY(50px);

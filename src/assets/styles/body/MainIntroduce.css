@@ -58,15 +58,19 @@
   letter-spacing: 0.0445em;
 }
 
-.mainIntroduceShow2 {
-  display: none;
-}
-
 .mainIntroduceShow1 {
   display: block;
 }
 
+.mainIntroduceShow2 {
+  display: none;
+}
+
 .mainIntroduceShow3 {
+  display: none;
+}
+
+.mainIntroduceShow4 {
   display: none;
 }
 
@@ -196,7 +200,11 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
+  .mainCallToAction {
+    height: 70svh;
+  }
+
   .mainIntroduceFlex {
     width: 100%;
   }
@@ -216,7 +224,10 @@
   }
 
   .mainIntroduceFlex {
-    margin-right: 0px;
+    margin-left: 0px;
+    padding-left: 20px;
+    justify-content: flex-start;
+    box-sizing: border-box;
   }
 
   .mainIntroduceWrap {
@@ -232,7 +243,22 @@
 
 @media (max-width: 499px) {
   .mainIntroduceFlex {
+    justify-content: center;
+  }
+
+  .mainIntroduceShow3 {
+    display: none;
+  }
+
+  .mainIntroduceShow4 {
+    display: block;
+    text-align: justify;
+  }
+
+  .mainIntroduceFlex {
     margin-right: 0px;
+    padding-right: 0px;
+    padding-left: 10px;
   }
   .mainIntroduceWrap {
     grid-template-columns: 12fr;
@@ -250,9 +276,14 @@
   .mainIntroduceText {
     margin: 0px 0px;
     width: calc(100% - 80px);
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 0px;
+    margin-right: 20px;
   }
+
+  .mainCallToActionTitleGrid > div:first-child {
+    height: 180px !important;
+  }
+
   .mainIntroduceWrap > div:first-child {
     height: 0px;
     display: none;
@@ -260,5 +291,9 @@
 
   .mainIntroduceMiddleText {
     font-size: 25px;
+  }
+
+  .mainCallToActionFooter {
+    height: 120px !important;
   }
 }
