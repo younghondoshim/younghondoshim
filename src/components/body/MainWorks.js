@@ -28,7 +28,7 @@ function MainWorks() {
             <div className="mainWorksGridStyle mainWorksGridText mainWorksGridChangeStyle1">
               <div className="mainWorksGridUpperText">
                 <div>영혼도심의</div>
-                <div>디스코</div>
+                <div>디스코그래피</div>
                 <div>
                   <a href="https://younghondoshim.bandcamp.com/">
                     더보기
