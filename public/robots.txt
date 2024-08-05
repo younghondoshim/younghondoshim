@@ -1,3 +1,3 @@
-# https://www.robotstxt.org/robotstxt.html
+# Are you connected?
 User-agent: *
 Disallow:
