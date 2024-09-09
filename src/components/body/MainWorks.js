@@ -42,6 +42,21 @@ function MainWorks() {
               </div>
               <div className="mainWorksGridLowerText">produced by RENE.</div>
             </div>
+            <div className="mainWorksGridStyle mainWorksGridChangeStyle4">
+              <div className="mainWorksBorder">
+                <div className="mainWorksBorder2"></div>
+                <iframe
+                  style={{ border: 0, width: "100%", height: "100%" }}
+                  src="https://bandcamp.com/EmbeddedPlayer/album=72550677/size=large/bgcol=ffffff/linkcol=04260c/tracklist=false/transparent=true/"
+                  seamless
+                  title="Modest Freaks"
+                >
+                  <a href="https://younghondoshim.bandcamp.com/album/modest-freaks">
+                    Modest Freaks by 끈
+                  </a>
+                </iframe>
+              </div>
+            </div>
             <div className="mainWorksGridStyle mainWorksGridChangeStyle2">
               <div className="mainWorksBorder">
                 <div className="mainWorksBorder2"></div>
@@ -73,21 +88,6 @@ function MainWorks() {
                 >
                   <a href="https://younghondoshim.bandcamp.com/album/gems">
                     GEMS by IC KID, RENE
-                  </a>
-                </iframe>
-              </div>
-            </div>
-            <div className="mainWorksGridStyle mainWorksGridChangeStyle4">
-              <div className="mainWorksBorder">
-                <div className="mainWorksBorder2"></div>
-                <iframe
-                  style={{ border: 0, width: "100%", height: "100%" }}
-                  src="https://bandcamp.com/EmbeddedPlayer/album=2320034669/size=large/bgcol=ffffff/linkcol=04260c/tracklist=false/transparent=true/"
-                  seamless
-                  title="Mystery"
-                >
-                  <a href="https://younghondoshim.bandcamp.com/album/mystery">
-                    Mystery by RENE
                   </a>
                 </iframe>
               </div>
