@@ -42,7 +42,7 @@ function MainWorks() {
               </div>
               <div className="mainWorksGridLowerText">produced by RENE.</div>
             </div>
-            <div className="mainWorksGridStyle mainWorksGridChangeStyle4">
+            <div className="mainWorksGridStyle mainWorksGridChangeStyle2">
               <div className="mainWorksBorder">
                 <div className="mainWorksBorder2"></div>
                 <iframe
@@ -57,7 +57,7 @@ function MainWorks() {
                 </iframe>
               </div>
             </div>
-            <div className="mainWorksGridStyle mainWorksGridChangeStyle2">
+            <div className="mainWorksGridStyle mainWorksGridChangeStyle3">
               <div className="mainWorksBorder">
                 <div className="mainWorksBorder2"></div>
                 <iframe
@@ -77,7 +77,7 @@ function MainWorks() {
                 </iframe>
               </div>
             </div>
-            <div className="mainWorksGridStyle mainWorksGridChangeStyle3">
+            <div className="mainWorksGridStyle mainWorksGridChangeStyle4">
               <div className="mainWorksBorder">
                 <div className="mainWorksBorder2"></div>
                 <iframe
